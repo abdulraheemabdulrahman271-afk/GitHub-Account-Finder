@@ -1,0 +1,159 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui,sans-serif}
+body{
+  min-height:100vh;
+  background:#0d0a16;
+  display:grid;
+  place-items:center;
+  padding:20px;
+  color:#e8e0ff;
+}
+.body{
+  width:100%;
+  max-width:420px;
+  background:#1a162a;
+  border:1px solid #2d2647;
+  border-radius:20px;
+  padding:22px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+.body h2{
+  font-size:14px;
+  letter-spacing:2px;
+  text-align:center;
+  margin-bottom:18px;
+  font-weight:900;
+  color:#c4b5fd;
+}
+.innerBody{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.searchBar{
+  display:flex;
+  gap:8px;
+  background:#211c35;
+  border:1px solid #2d2647;
+  border-radius:12px;
+  padding:6px;
+}
+.searchBar input{
+  flex:1;
+  border:none;
+  outline:none;
+  padding:10px 12px;
+  font-size:13px;
+  background:transparent;
+  color:#e8e0ff;
+}
+.searchBar input::placeholder{color:#5a4f7a}
+.searchBar button{
+  padding:10px 18px;
+  border:none;
+  border-radius:8px;
+  background:#e8e0ff;
+  color:#0d0a16;
+  font-weight:800;
+  font-size:11px;
+  cursor:pointer;
+  letter-spacing:0.5px;
+}
+.searchBar button:disabled{opacity:0.6;cursor:not-allowed}
+.status{
+  font-size:11px;
+  color:#8b7fb0;
+  text-align:center;
+  background:#161126;
+  border:1px dashed #2d2647;
+  padding:8px;
+  border-radius:8px;
+}
+.display{
+  min-height:120px;
+  background:#161126;
+  border:1px solid #2d2647;
+  border-radius:16px;
+  padding:16px;
+  display:grid;
+  place-items:center;
+  color:#5a4f7a;
+  font-size:12px;
+}
+.innerDisplay{
+  width:100%;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+  color:#e8e0ff;
+}
+.innerDisplay img{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  border:3px solid #2d2647;
+  margin-bottom:8px;
+}
+.innerDisplay h2{
+  font-size:18px;
+  letter-spacing:0;
+  margin:0;
+  color:#e8e0ff;
+}
+.innerDisplay .username{
+  font-size:12px;
+  color:#a78bfa;
+  font-weight:700;
+}
+.innerDisplay .bio{
+  font-size:12px;
+  color:#8b7fb0;
+  margin:8px 0;
+  line-height:1.4;
+}
+.github-stats{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:8px;
+  width:100%;
+  margin-top:12px;
+}
+.github-stats div{
+  background:#211c35;
+  border:1px solid #2d2647;
+  border-radius:10px;
+  padding:8px;
+}
+.github-stats div small{
+  display:block;
+  font-size:8px;
+  color:#8b7fb0;
+  letter-spacing:1px;
+  margin-bottom:2px;
+}
+.github-stats div b{
+  font-size:14px;
+  color:#e8e0ff;
+}
+.github-extra{
+  width:100%;
+  margin-top:10px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  text-align:left;
+}
+.github-extra p{
+  font-size:11px;
+  background:#211c35;
+  border:1px solid #2d2647;
+  padding:8px 10px;
+  border-radius:8px;
+  color:#c4b5fd;
+}
+.github-extra a{
+  color:#a78bfa;
+  text-decoration:none;
+  font-weight:600;
+}
